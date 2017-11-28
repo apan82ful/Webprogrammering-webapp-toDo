@@ -1,0 +1,39 @@
+body{
+	font-family: Helvetica, Arial, san-serif;
+}
+h1{
+	font: bold 20px Georgia, Arial, Helvetica, sans-serif;
+	margin: 0px; 
+	margin-bottom: 20px;
+	padding: 10px;
+}
+p{
+	font-size: 12px;
+}
+/* Mobile */
+@media (max-width: 400px) {
+	body{
+		background-color: yellow;
+	}
+	h1{
+		border-style: solid;
+	}
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+	body{
+		background-color: red;
+	}
+	h1{
+		border-style: dotted;
+	}
+}
+/* Desktop */
+@media (min-width: 1025px) {
+	body{
+		background-color: orange;
+	}
+	h1{
+		border-style: dashed;
+	}
+}

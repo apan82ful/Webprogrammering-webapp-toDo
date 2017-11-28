@@ -1,0 +1,72 @@
+body{
+    font-family: Helvetica, Arial, san-serif;
+    margin: 0;
+}
+h1{
+    font-family: Georgia, Helvetica, Arial, san-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 12px;
+}
+p{
+    font-size:12px;
+    line-height:130%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    margin-bottom: 7px;
+}
+a {
+    font-size: 14px;
+    color: #ffbd00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.nav_list{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: gray;
+}
+
+/* Använd samma mått på dina Media queries som i Unsemantic */
+/* Mobile */
+@media (max-width: 400px) { /* Ökar storleken för mobile för att göra det mer lättläst */
+    p{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    a{
+        font-size: 18px;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav.nav_list{ /* Centerar navigeringsmenyn */
+        text-align: center;
+    }
+    nav.nav_list ul li{
+        display: inline; /* Visar menyn som inline */
+    }
+}
+/* Desktop */
+@media (min-width: 1025px) {
+    nav.nav_list{
+        text-align: center; /* Centerar navigeringsmenyn */
+        margin-bottom: 45px;
+    }
+    nav.nav_list ul li{
+        display: inline; /* Visar menyn som inline */
+    }
+}

@@ -1,0 +1,21 @@
+
+Tutorial:
+http://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+npm install express --save
+
+------
+
+Kör koden i ett terminalfönster i samma katalog
+node server.js
+
+------
+
+Prova endpoints  t ex http://127.0.0.1:8081/listUsers
+Använd t ex Postman för att prova http-requests för (get,post,delete)
+
+https://www.getpostman.com

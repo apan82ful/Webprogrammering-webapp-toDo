@@ -1,0 +1,49 @@
+
+Tutorial:
+http://www.tutorialspoint.com/nodejs/nodejs_npm.htm
+http://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+npm install express
+npm install body-parser
+npm install cookie-parser
+npm install multer
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node helloworld.js
+
+Gå till http://127.0.0.1:8081/ i en browser
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node server.js
+
+Gå till http://127.0.0.1:8081/ i en browser
+Prova att du kommer åt bilden i public/img/. http://127.0.0.1:8081/img/skivomlag.jpg
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node exempel.js
+
+Gå till http://127.0.0.1:8081/ i en browser
+Prova endpoints (get) t ex http://127.0.0.1:8081/list_user
+Använd t ex Postman för att prova http-requests för (post,delete)
+
+https://www.getpostman.com
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node server_public.js
+
+Gå till http://127.0.0.1:8081/ i en browser
+Prova länkarna för de båda formulären (POST och GET). Se hur Endpoints används (process_get och process_post)
+
+-----

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Anteckningar!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid text-center">
+    <div class="jumbotron jumbotron-heading ">
+        <h1>Anteckningar</h1>
+    </div>
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-fixed-top">
+
+        <div class="float-right">
+            <form id="loginfield" class="navbar navbar-expand-sm bg-light navbar-light">
+                <label for="login">User: </label>
+                <input type="text" class="form-control" id="login" name="login" placeholder="Enter username"
+                       required pattern="^[a-zA-Z0-9]{1,10}$">
+
+                <label for="pwd">Login:</label>
+                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required
+                       pattern="^[a-zA-Z0-9]{1,10}$">
+
+                <input type="submit" value="Login" class="btn btn-success">
+            </form>
+
+            <div>
+                <input type="submit" value="Logout" id="logout" class="btn btn-success ">
+            </div>
+
+        </div>
+    </nav>
+
+   <!-- <div class="container-fluid">-->
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="container">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Text</th>
+                        </tr>
+                        </thead>
+                        <tbody id="table-content">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- För att lägga till nya anteckningar i listan-->
+        <form method="post" id="addNewForm">
+            <div class="form-row">
+
+                <div class="col-sm-4 col-md-4">
+                    <label for="todoTitle"></label>
+                    <input type="text" class="form-control" placeholder="Titel" id="todoTitle" name="todoTitle">
+                </div>
+                <div class="col-sm-8 col-md-8">
+                    <label for="todoContent"></label>
+                    <input type="text" class="form-control" placeholder="Text" id="todoContent" name="todoContent">
+                </div>
+                <div class="col-sm-1 col-md-1 marginLaggtillKnapp" >
+                <input type="submit" class="btn btn-success" value="Lägg till">
+                </div>
+            </div>
+        </form>
+</div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+                integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+                crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+                integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+                crossorigin="anonymous"></script-->
+        <script src="js/jasonscript.js"></script>
+        <script src="js/scriptuse.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,27 @@
+
+Tutorial:
+http://www.tutorialspoint.com/nodejs/nodejs_first_application.htm
+http://www.tutorialspoint.com/nodejs/nodejs_file_system.htm
+
+------
+
+helloworld.js
+
+Kör koden i ett terminalfönster i samma katalog
+node helloworld.js
+
+Gå till http://127.0.0.1:8081/ i en browser
+
+------
+
+file_write.js
+Kör koden i ett terminalfönster i samma katalog:
+node file_write.js
+
+------
+
+file_read.js
+Kör koden i ett terminalfönster i samma katalog:
+node file_read.js
+
+------

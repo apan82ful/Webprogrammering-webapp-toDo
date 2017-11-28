@@ -1,0 +1,40 @@
+-- Bok (version 1)
+CREATE TABLE bok(
+	bokId INTEGER PRIMARY KEY,
+	bokTitel TEXT,
+	bokForfattare TEXT,
+	bokBeskrivn TEXT,
+	bokIsbn TEXT,
+	bokPris NUMERIC
+);
+
+-- Fyll tabellen med lite data
+INSERT INTO bok (bokTitel,bokForfattare,bokIsbn,bokPris) VALUES('Röda rummet','Strindberg, August','12345','120');
+ 
+SELECT * FROM bok;
+
+
+-- Bok och kategori (version 2)
+CREATE TABLE kategori(
+	kategoriId INTEGER PRIMARY KEY,
+	kategoriNamn TEXT
+);
+CREATE TABLE bok(
+	bokId INTEGER PRIMARY KEY,
+	bokTitel TEXT,
+	bokForfattare TEXT,
+	bokBeskrivn TEXT,
+	bokIsbn TEXT,
+	bokPris NUMERIC,
+    bokKategoriId INT
+);
+
+-- Fyll tabellerna med lite data
+INSERT INTO kategori(kategoriNamn) VALUES('Roman');
+
+INSERT INTO bok (bokTitel,bokForfattare,bokIsbn,bokPris,bokKategoriId) VALUES('Röda rummet','Strindberg, August','12345','120',1);
+ 
+SELECT * FROM kategori INNER JOIN bok ON kategori.kategoriId = bok.bokKategoriId;
+
+
+

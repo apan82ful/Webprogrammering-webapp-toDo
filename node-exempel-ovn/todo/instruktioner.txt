@@ -1,0 +1,47 @@
+Läs om MYSQL och Node:
+https://www.w3resource.com/node.js/nodejs-mysql.php
+
+------
+
+Skapa databas i MySQL:
+
+CREATE DATABASE tododb;
+
+USE tododb;
+
+CREATE TABLE todoList(
+	todoId INT NOT NULL AUTO_INCREMENT,
+	todoTitle VARCHAR(100),
+	todoContent VARCHAR(255),
+	todoDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+	PRIMARY KEY (todoId)
+);
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+(--save sparar till package.json)
+
+npm install express --save
+npm install body-parser --save
+npm install mysql --save
+
+------
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js
+
+------
+
+Prova endpoints med Postman
+https://www.getpostman.com
+
+Gå till http://127.0.0.1:8000/
+
+-------
+
+Gå till den publika sidan i en browser.
+
+Gå till http://127.0.0.1:8000/
+
+-------

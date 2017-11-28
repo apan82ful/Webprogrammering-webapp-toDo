@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Unsemantic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/unsemantic-grid-responsive-tablet.css" />
+</head>
+
+<body>
+<div class="grid-container">
+  <div class="grid-50 mobile-grid-100 tablet-grid-50">
+    I am 50% wide on desktop.
+    I am 100% wide on mobile.
+    I am 50% wide on tablet.
+  </div>
+  <div class="grid-25 mobile-grid-50 tablet-grid-50">
+    I am 25% wide on desktop.
+    I am 50% wide on mobile.
+    I am 50% wide on tablet.
+  </div>
+  <div class="grid-25 mobile-grid-50 tablet-grid-100">
+    <span class="hide-on-desktop">
+      I am hidden on desktop.
+    </span>
+    <span class="hide-on-mobile">
+      I am hidden on mobile.
+    </span>
+    <span class="hide-on-tablet">
+      I am hidden on tablet.
+    </span>
+  </div>
+</div>
+</body>
+</html>

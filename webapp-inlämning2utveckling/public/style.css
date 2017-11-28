@@ -1,0 +1,27 @@
+body{
+    font-family: Helvetica Arial SansSerif;
+}
+h1{
+    color: #666666;
+}
+
+.jumbotron-heading{
+    margin-bottom: 0rem;
+    background-color: #95adc5;
+    border-radius: 0.3rem;
+}
+.bg-light {
+    background-color: #a8c0d8!important;
+}
+.max-width{
+    width: 100%;
+}
+
+.noteItem{
+    border: 1px solid #95adc5;
+    background-color: #a8c0d8;
+    list-style-type: none;
+}
+.marginLaggtillKnapp {
+    margin-left: -11px;
+}
